@@ -84,6 +84,12 @@ body {
   text-align: center; /* Center text within the paragraph */
 }
 
+.section-5 .card-back p {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
 /* Pseudo-elements for horizontal lines */
 .section-5 .card .card-front-p::before,
 .section-5 .card .card-front-p::after {
