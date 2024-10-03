@@ -48,7 +48,7 @@ Section1-Result19:
 "Here’s how you can style the <p> element with relative positioning and add ::before and ::after 
 pseudo-elements to create horizontal lines above and below the paragraph. The lines will have a width of 100%, a height of 2px, and a light grey background from your predefined palette."
 
-Section1-Result20: ""
+Section1-Result20: "To create a simple flip animation for the button when it is hovered, you can use CSS transformations and transitions. Below is the updated CSS code that includes the flip effect for the button:"
 
 Section1-Result21: ""
 

@@ -89,9 +89,9 @@ Section1-prompt19:
 positioned absolutes and the before 20px above the p and the after 20px below the p. 
 The peudo elements should just be a string line with 100% width and 2px height with a bg color of a light grey from the predefined palette"
 
-Section1-prompt20: ""
+Section1-prompt20: "Now lets create a simple filp animation to apply to the button when its is hovered so that it gets filipped on the a-axis when hovered"
 
-Section1-prompt21: ""
+Section1-prompt21: "Find a way to place the button at the bottom of the card since now it just floating out of position alhough the animation is working:"
 
 Section1-prompt22: ""
 
