@@ -1,0 +1,5 @@
+Each prompt must be documented in the prompts.txt like:
+
+Prompt-1: "Create some basic css styling for me..."
+
+Prompt-2: "Generate a basic css grid 2x2..."

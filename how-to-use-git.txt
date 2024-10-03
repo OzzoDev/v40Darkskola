@@ -1,0 +1,19 @@
+How to create a new branch from develop
+
+If you are on main:
+
+git checkout develop
+
+When you are on develop (replace template branch name with actul branch name):
+
+git checkout -b feature-section1 
+
+Work flow in bash terminal (when new branch is created)
+
+git add .
+
+git commit -m "Message"
+
+// use: git push --set-upstream origin feature-section1 the frist time to publish the branch to remote repo, then only: git push
+
+git push --set-upstream origin feature-section1

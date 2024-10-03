@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-lightest: #e6e6fa;
+  --color-light: #d4d4e5;
+  --color-medium-light: #c3c3d0;
+  --color-medium: #b2b2bb;
+  --color-dark-light: #a1a1a7;
+  --color-dark: #909093;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
