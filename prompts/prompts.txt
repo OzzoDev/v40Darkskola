@@ -1,5 +1,5 @@
-Section1-prompt1: ""
+Section5-prompt1: "can you write me a responsive and good looking gallery that displays both images and text in html and css"
 
-Section1-prompt2: ""
+Section5-prompt2: "can you make it more interactive, and only show one image at a time, there should be space for 6 images"
 
-Section1-prompt3: ""
+Section5-prompt3: "exactly what i wanted! Can you make a cool transition between the images?"
