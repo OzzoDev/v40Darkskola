@@ -1,3 +1,5 @@
 Each response provided by AI must be inserted into this folder as an image or screen shot with the file name of section1-result-1, section1-result-2, section1-result-3...
 
 Or you can chose to add each response as text in results.txt
+
+Note that you are only adviced to provide the frist lines of the response, or in other words provided only the summarized response by the AI
