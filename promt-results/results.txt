@@ -10,22 +10,22 @@ Section1-Result5: "Here’s the updated HTML code with unique and creative descr
 
 Section1-Result6: "Here’s the updated HTML code with the correct src values for each image, now including the .webp file type:"
 
-Section1-Result7: ""
+Section1-Result7: "Here’s the updated CSS code to reflect your requirements for the card styling in styles.css:"
 
-Section1-Result8: ""
+Section1-Result8: "Here’s the updated CSS code that targets the .card elements specifically within a section that has the class .section-5:"
 
-Section1-Result9: ""
+Section1-Result9: "Here’s the updated CSS code with the specified changes to the image height and border radius:"
 
-Section1-Result10: ""
+Section1-Result10: "Here’s the updated HTML code with the <figure> element wrapping the image and using <figcaption> to display the title:"
 
-Section1-Result11: ""
+Section1-Result11: "Here’s the updated CSS code to increase the font size of the <figcaption> to 2rem and make it bold:"
 
-Section1-Result12: ""
+Section1-Result12: "Here’s the updated CSS code with a small text shadow added to the <figcaption> element:"
 
-Section1-Result13: ""
+Section1-Result13: "Here’s the updated CSS code to use flexbox on the .card elements, setting the direction to column and applying justify-content: space-between for an even layout:"
 
-Section1-Result14: ""
-
-Section1-Result15: ""
+Section1-Result14: "Here’s the updated CSS code incorporating the specified changes for the button's border radius, the paragraph's max-width, and centering the items within the cards:"
 
 Section1-Result16: ""
+
+Section1-Result17: ""

@@ -19,21 +19,28 @@ Think like that it size represtens diffrents times in its life. The text on each
 
 Section1-prompt6: "I noticed a bug that the src value of each img does not have a file type add .webp to the src"
 
-Section1-prompt7: ""
+Section1-prompt7: 
 
-Section1-prompt8: ""
+"Now for the css, reset all styling and lets work in my styles.css. Limit the card max-width to 400px. 
+Which could be achived by using width: min(400px,100%) to allow the card to take up all available width as long as the card is not wider than 400px. 
+For the height make the card 700 px high. also add 10px padding to the card, and a boder radius of 20px. For the img set the with to 100% and object fit to cover"
 
-Section1-prompt9: ""
+Section1-prompt8: "Since I have a wrapper of a section with a class called section-5 target the card in css like .section-5 .card and so on"
 
-Section1-prompt10: ""
+Section1-prompt9: "Set the the height of the img to 400 px and the boder radius of img to 10 px"
 
-Section1-prompt11: ""
+Section1-prompt10: "Lets take it back to html, instaed of using a h2 use a figure to wrap the img with a figcaption and put the the from the h2 into that figcaption"
 
-Section1-prompt12: ""
+Section1-prompt11: "Great increase the font size to 2rem of the figcaption and make it bold"
 
-Section1-prompt13: ""
+Section1-prompt12: "Add a small text shadow to the figcaption element"
 
-Section1-prompt14: ""
+Section1-prompt13: "For layout purposes use flex on the card with direction set to column and then justify content so space between to have a even and smooth layout on all three cards"
+
+Section1-prompt14: 
+
+"Some more chnages css vise that need to be made are a border radius of the button set to 10 px and the max-width of the p element on the card set to 80%. 
+Also use align-items center on the card"
 
 Section1-prompt15: ""
 
@@ -56,5 +63,3 @@ Section1-prompt23: ""
 Section1-prompt24: ""
 
 Section1-prompt25: ""
-
-Section1-prompt26: ""
