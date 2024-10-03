@@ -15,3 +15,22 @@ document.querySelectorAll(".read-less").forEach((button) => {
     card.querySelector(".read-more").style.display = "block"; // Show the button again
   });
 });
+
+const container = document.querySelector(".particle-container");
+
+for (let i = 0; i < 100; i++) {
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
+
+  // Random position
+  const topPosition = Math.random() * 100; // Percentage
+  const leftPosition = Math.random() * 100; // Percentage
+  particle.style.top = `${topPosition}%`;
+  particle.style.left = `${leftPosition}%`;
+
+  // Random animation duration
+  const animationDuration = Math.random() * 10 + 2; // Between 2s and 12s
+  particle.style.animationDuration = `${animationDuration}s`;
+
+  container.appendChild(particle);
+}

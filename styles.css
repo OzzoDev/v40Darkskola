@@ -32,6 +32,7 @@ body {
   gap: 30px; /* Gap between items */
   padding: 100px 0; /* Adjust padding for the section if needed */
   background-color: var(--color-lightest); /* Light background for the section */
+  position: relative;
 }
 
 .section-5 .card {
@@ -49,6 +50,7 @@ body {
   align-items: center; /* Center all items in the card */
   color: var(--color-lightest); /* All text set to lightest color */
   position: relative;
+  z-index: 2;
 }
 
 .section-5 .card-back {
