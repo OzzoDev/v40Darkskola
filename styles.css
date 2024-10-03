@@ -30,7 +30,7 @@ body {
   align-items: center;
   gap: 30px; /* Gap between items */
   padding: 100px 0; /* Adjust padding for the section if needed */
-  background-color: var(--color-lightest); /* Light background for the section */
+  background: linear-gradient(to right, var(--color-dark), var(--color-dark-light)); /* Light background for the section */
   position: relative;
 }
 
@@ -103,11 +103,11 @@ body {
 }
 
 .section-5 .card .card-front-p::before {
-  top: -20px; /* Position above the paragraph */
+  top: -10px; /* Position above the paragraph */
 }
 
 .section-5 .card p::after {
-  bottom: -20px; /* Position below the paragraph */
+  bottom: -10px; /* Position below the paragraph */
 }
 
 /* Button Styles */
