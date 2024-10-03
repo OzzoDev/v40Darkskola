@@ -1,5 +1,60 @@
-Section1-prompt1: ""
+Section1-prompt1: "I want some basic html code for a card with an img h2 under the img a paragrah in the middle and a read more button in the bottom of the card"
 
-Section1-prompt2: ""
+Section1-prompt2: "Great make that three cards"
 
-Section1-prompt3: ""
+Section1-prompt3: "In card one the h2 should say "Size Small", card two "Size Medium" and card three "Size Large""
+
+Section1-prompt4: 
+
+"Great the src from the images should be: card 1: "../img/dragon-orange-s", card 2: "../img/dragon-orange-m" , card 3: "../img/dragon-orange-l". 
+Also change the alt to somthing more descriptive based on the dragon's size, but do not use "An img of...". Instaed describe the image with out using the word image or img. 
+Then let add aria-labels and title attribute to the images in each card. 
+The value of the img aria-label attribute and title attribute must be something like the alt that describe the imgae but try to vary the values of the
+ alt, aria-label and title attribute for each image. And these values should be a description of the image but cannot contain words like an image of or img."
+
+Section1-prompt5: 
+
+"As the next step to populate the p element in each card come up with some creatvie text about the dragons life based. 
+Think like that it size represtens diffrents times in its life. The text on each card should be 30-40 words, and cannot be identical to text on other cards"
+
+Section1-prompt6: "I noticed a bug that the src value of each img does not have a file type add .webp to the src"
+
+Section1-prompt7: ""
+
+Section1-prompt8: ""
+
+Section1-prompt9: ""
+
+Section1-prompt10: ""
+
+Section1-prompt11: ""
+
+Section1-prompt12: ""
+
+Section1-prompt13: ""
+
+Section1-prompt14: ""
+
+Section1-prompt15: ""
+
+Section1-prompt16: ""
+
+Section1-prompt17: ""
+
+Section1-prompt18: ""
+
+Section1-prompt19: ""
+
+Section1-prompt20: ""
+
+Section1-prompt21: ""
+
+Section1-prompt22: ""
+
+Section1-prompt23: ""
+
+Section1-prompt24: ""
+
+Section1-prompt25: ""
+
+Section1-prompt26: ""
