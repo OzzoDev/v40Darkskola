@@ -22,3 +22,103 @@ body {
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.banner-section-3 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-section-3 h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-section-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/images-section-3/deathwing-banner.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  z-index: 1;
+}
+
+
+.description-deathwing {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Container for the images */
+.image-container-section-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1200px; /* Added max-width to the image container */
+  margin: 0 auto; /* Center the image container */
+}
+
+.image-container-section-3 figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container-section-3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 600px; /* Ensures images don't grow too large */
+}
+
+.figcaption-section-3 {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #cccccc;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner-section-3 h2 {
+    font-size: 3rem;
+  }
+  .description-deathwing {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .image-container-section-3 {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
