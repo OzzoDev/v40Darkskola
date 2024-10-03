@@ -45,7 +45,7 @@ body {
   flex-direction: column; /* Set direction to column */
   justify-content: space-between; /* Even spacing between elements */
   align-items: center; /* Center all items in the card */
-  color: black; /* All text set to lightest color */
+  color: var(--color-lightest); /* All text set to lightest color */
 }
 
 .section-5 .card img {
@@ -63,15 +63,36 @@ body {
 }
 
 .section-5 .card p {
+  position: relative; /* Set position to relative for pseudo-elements */
   padding: 0 16px;
   margin-bottom: 16px;
   max-width: 80%; /* Set max width to 80% */
   text-align: center; /* Center text within the paragraph */
 }
 
+/* Pseudo-elements for horizontal lines */
+.section-5 .card p::before,
+.section-5 .card p::after {
+  content: ""; /* Necessary for pseudo-elements */
+  position: absolute; /* Positioning */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 2px; /* Height of the line */
+  background-color: var(--color-light); /* Light grey from the palette */
+}
+
+.section-5 .card p::before {
+  top: -20px; /* Position above the paragraph */
+}
+
+.section-5 .card p::after {
+  bottom: -20px; /* Position below the paragraph */
+}
+
 .section-5 .card button {
   background-color: var(--color-dark-light); /* Button background color */
   border: none;
+  color: var(--color-lightest); /* Button text color */
   padding: 10px 20px;
   border-radius: 10px; /* Updated border radius for the button */
   cursor: pointer;
