@@ -32,7 +32,7 @@ body {
 }
 
 .section-5 .card {
-  background: white;
+  background: var(--color-medium); /* Updated card background color for better contrast */
   border-radius: 20px; /* Updated border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -45,6 +45,7 @@ body {
   flex-direction: column; /* Set direction to column */
   justify-content: space-between; /* Even spacing between elements */
   align-items: center; /* Center all items in the card */
+  color: black; /* All text set to lightest color */
 }
 
 .section-5 .card img {
@@ -65,13 +66,12 @@ body {
   padding: 0 16px;
   margin-bottom: 16px;
   max-width: 80%; /* Set max width to 80% */
-  text-align: jus; /* Center text within the paragraph */
+  text-align: center; /* Center text within the paragraph */
 }
 
 .section-5 .card button {
-  background-color: #007bff;
+  background-color: var(--color-dark-light); /* Button background color */
   border: none;
-  color: white;
   padding: 10px 20px;
   border-radius: 10px; /* Updated border radius for the button */
   cursor: pointer;
@@ -79,5 +79,5 @@ body {
 }
 
 .section-5 .card button:hover {
-  background-color: #0056b3;
+  background-color: var(--color-medium-light); /* Darker button color on hover */
 }

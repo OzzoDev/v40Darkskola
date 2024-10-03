@@ -42,15 +42,52 @@ Section1-prompt14:
 "Some more chnages css vise that need to be made are a border radius of the button set to 10 px and the max-width of the p element on the card set to 80%. 
 Also use align-items center on the card"
 
-Section1-prompt15: ""
+Section1-prompt15: 
 
-Section1-prompt16: ""
+"So there is the full css file with some colors and more. I want help with adding the colors to the card, 
+use the darker color further back and the ligher one more forword, to the text that is. 
+Combine the colors from the prefined palatte as that but do not use the darkest color as that will be the bg of the wrapper later on"
 
-Section1-prompt17: ""
+Section1-prompt16: 
 
-Section1-prompt18: ""
+"Here is the predfined palette: :root {
+  --color-lightest: #e6e6fa;
+  --color-light: #d4d4e5;
+  --color-medium-light: #c3c3d0;
+  --color-medium: #b2b2bb;
+  --color-dark-light: #a1a1a7;
+  --color-dark: #909093;
+}"
 
-Section1-prompt19: ""
+Section1-prompt17: "Set this as the card bg color: --color-dark-light and all text on the card must have this color: --color-lightest: #e6e6fa;"
+
+Section1-prompt18: 
+
+"Change up the colors from the palette ro reslove this accessibility error:
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+figcaption
+div.card
+p
+div.card
+button
+figcaption
+div.card
+p
+div.card
+button
+figcaption
+div.card
+p
+div.card
+button"
+
+Section1-prompt19: 
+
+"To style the card some more make the p element position relative and add both before and after peudo elements 
+positioned absolutes and the before 20px above the p and the after 20px below the p. 
+The peudo elements should just be a string line with 100% width and 2px height with a bg color of a light grey from the predefined palette"
 
 Section1-prompt20: ""
 

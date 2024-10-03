@@ -26,6 +26,56 @@ Section1-Result13: "Here’s the updated CSS code to use flexbox on the .card el
 
 Section1-Result14: "Here’s the updated CSS code incorporating the specified changes for the button's border radius, the paragraph's max-width, and centering the items within the cards:"
 
-Section1-Result16: ""
+Section1-Result15: 
 
-Section1-Result17: ""
+"To enhance your card design with a color scheme using lighter and darker shades, you can incorporate the specified colors into your CSS. 
+Here’s how you can structure it while ensuring the darkest color is reserved for the background of the wrapper:"
+
+Section1-Result16: 
+
+"Given your predefined color palette, here’s an updated CSS code that incorporates those colors into the card design, 
+utilizing the darker shades for the background and lighter shades for the text:"
+
+Section1-Result17: "Here’s the updated CSS code with the card background color set to --color-dark-light and all text on the card set to --color-lightest:"
+
+Section1-Result18: 
+
+"To improve accessibility by ensuring sufficient contrast between background and foreground colors, 
+I’ll adjust the colors from your predefined palette. Here’s an updated CSS that enhances contrast while still using the palette effectively:"
+
+Section1-Result19: 
+
+"Here’s how you can style the <p> element with relative positioning and add ::before and ::after 
+pseudo-elements to create horizontal lines above and below the paragraph. The lines will have a width of 100%, a height of 2px, and a light grey background from your predefined palette."
+
+Section1-Result20: ""
+
+Section1-Result21: ""
+
+Section1-Result22: ""
+
+Section1-Result23: ""
+
+Section1-Result24: ""
+
+Section1-Result25: ""
+
+Section1-Result26: ""
+
+Section1-Result27: ""
+
+Section1-Result28: ""
+
+Section1-Result29: ""
+
+Section1-Result30: ""
+
+Section1-Result31: ""
+
+Section1-Result32: ""
+
+Section1-Result33: ""
+
+Section1-Result34: ""
+
+Section1-Result35: ""
