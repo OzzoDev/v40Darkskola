@@ -97,6 +97,6 @@ Section1-prompt22: "In the section-5 create a css grid with the columns defined 
 
 Section1-prompt23: "Use flex and flex wrap instaed on the section-5"
 
-Section1-prompt24: ""
+Section1-prompt24: "How to use js and css as well as html to show the backside of these cards with a longer text about the dragon when the button is read more button is clicked"
 
-Section1-prompt25: ""
+Section1-prompt25: "When I press read more then read less the read more button gets placed in the left bottom corner, do not change the read more postion after closeing the read more text also make sure there are no peudo elements on the back side of the card"

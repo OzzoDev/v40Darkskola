@@ -51,6 +51,17 @@ body {
   position: relative;
 }
 
+.section-5 .card-back {
+  width: min(400px, 100%); /* Max width set to 400px */
+  height: 700px; /* Fixed height */
+  display: none; /* Initially hidden */
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  background-color: var(--color-medium);
+}
+
 .section-5 .card img {
   width: 100%; /* Set width to 100% */
   height: 400px; /* Updated height to 400px */
@@ -74,8 +85,8 @@ body {
 }
 
 /* Pseudo-elements for horizontal lines */
-.section-5 .card p::before,
-.section-5 .card p::after {
+.section-5 .card .card-front-p::before,
+.section-5 .card .card-front-p::after {
   content: ""; /* Necessary for pseudo-elements */
   position: absolute; /* Positioning */
   left: 0; /* Align to the left */
@@ -84,7 +95,7 @@ body {
   background-color: var(--color-light); /* Light grey from the palette */
 }
 
-.section-5 .card p::before {
+.section-5 .card .card-front-p::before {
   top: -20px; /* Position above the paragraph */
 }
 
@@ -112,10 +123,12 @@ body {
 
 /* Optional: Adding a wrapper for the button to handle the flip effect */
 .card-button-wrapper {
-  width: 100%;
+  width: fit-content;
   perspective: 1000px; /* Perspective for 3D effect */
   margin-top: auto;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   bottom: 10px;
 }
 
