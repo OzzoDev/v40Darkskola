@@ -93,9 +93,9 @@ Section1-prompt20: "Now lets create a simple filp animation to apply to the butt
 
 Section1-prompt21: "Find a way to place the button at the bottom of the card since now it just floating out of position alhough the animation is working:"
 
-Section1-prompt22: ""
+Section1-prompt22: "In the section-5 create a css grid with the columns defined as repeat(auto-fit, minmax(400px, 1fr)); The grid should also have a base gap of 30px"
 
-Section1-prompt23: ""
+Section1-prompt23: "Use flex and flex wrap instaed on the section-5"
 
 Section1-prompt24: ""
 

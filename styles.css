@@ -21,14 +21,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
 }
 
 .section-5 {
-  display: flex;
+  display: flex; /* Use flex display */
+  flex-wrap: wrap; /* Allow items to wrap */
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 20px; /* Adjust padding for the section if needed */
+  gap: 30px; /* Gap between items */
+  padding: 100px 0; /* Adjust padding for the section if needed */
+  background-color: var(--color-lightest); /* Light background for the section */
 }
 
 .section-5 .card {
@@ -39,7 +42,6 @@ body {
   width: min(400px, 100%); /* Max width set to 400px */
   height: 700px; /* Fixed height */
   padding: 10px; /* Added padding */
-  margin: 20px;
   text-align: center;
   display: flex; /* Added flex display */
   flex-direction: column; /* Set direction to column */
