@@ -36,15 +36,6 @@
   background-color: var(--color-light); /* Ljusare färg vid hover */
 }
 
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: var(--color-dark); /* Dark background for contrast */
-  color: var(--color-lightest); /* Light text for readability */
-}
-
-
 
 .dragon-name-generator {
   text-align: center;
