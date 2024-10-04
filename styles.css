@@ -664,7 +664,7 @@ input[type="radio"] {
   flex: 1 1 50%; /* Adjusts the text to occupy 50% of the container */
 }
 
-
+ /* Franks kod börjar här */
 .name-generator {
   text-align: center;
   margin-bottom: 20px; /* Avstånd under namngeneratorn */
@@ -811,4 +811,4 @@ input[type="radio"] {
     grid-template-columns: 1fr;
   }
 }
-
+/* Slut franks css */
