@@ -254,6 +254,7 @@ body {
   padding: 100px 0; /* Adjust padding for the section if needed */
   background: linear-gradient(to right, var(--color-dark), var(--color-dark-light)); /* Light background for the section */
   position: relative;
+  background-color: red;
 }
 
 .section-5 .card {
