@@ -9,10 +9,35 @@
     <link rel="stylesheet" href="particles.css" />
 </head>
   <body>
-    <header>
-      <!-- code -->
+    <header class="header">
+      <div class="header__logo">
+        <img src="logo.png" alt="Dragonschool LLC Logo" />
+      </div>
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="#section1">Section 1</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section2">Section 2</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section3">Section 3</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section4">Section 4</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section5">Section 5</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section6">Section 6</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#section7">Section 7</a></li>
+        </ul>
+      </nav>
+      <div class="header__dropdown">
+        <button class="header__menu-toggle" aria-controls="primary-menu" aria-expanded="false">☰</button>
+        <ul class="header__dropdown-menu">
+          <li class="header__dropdown-close"><button class="header__close-button">✖</button></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section1">Section 1</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section2">Section 2</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section3">Section 3</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section4">Section 4</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section5">Section 5</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section6">Section 6</a></li>
+          <li class="header__dropdown-item"><a class="header__dropdown-link" href="#section7">Section 7</a></li>
+        </ul>
+      </div>
     </header>
-
     <main>
       <div class="dragon-name-generator">
         <button id="generate-dragon-name-button">Generate Dragon Rap Name</button>
