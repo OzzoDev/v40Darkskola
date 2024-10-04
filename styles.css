@@ -25,7 +25,7 @@ body {
 .section4{
   max-height:min-content;
   background-color: var(--color-dark-light);
-  background-image: url("imagesSection5/sssurf.svg");
+  background-image: url("imagesSection4/sssurf.svg");
   background-size: cover;
   padding-bottom: 20px;
 }
