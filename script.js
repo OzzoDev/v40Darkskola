@@ -1,8 +1,8 @@
-const galleryItems = document.querySelectorAll('.gallery-item-sec5');
+const galleryItems = document.querySelectorAll('.gallery-item-sec4');
 let currentIndex = 0;
 
-const prevBtn = document.getElementById('prevBtn-sec5');
-const nextBtn = document.getElementById('nextBtn-sec5');
+const prevBtn = document.getElementById('prevBtn-sec4');
+const nextBtn = document.getElementById('nextBtn-sec4');
 
 prevBtn.addEventListener('click', showPrevious);
 nextBtn.addEventListener('click', showNext);

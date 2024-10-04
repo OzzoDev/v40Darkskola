@@ -22,15 +22,15 @@ body {
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.section5{
+.section4{
   max-height:min-content;
   background-color: var(--color-dark-light);
   background-image: url("imagesSection5/sssurf.svg");
   background-size: cover;
-
+  padding-bottom: 20px;
 }
 
-.gallery-sec5 {
+.gallery-sec4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ body {
   overflow:hidden;
 }
 
-.gallery-item-sec5 {
+.gallery-item-sec4 {
   display: block;
   position: absolute;
   width: 100%;
@@ -55,38 +55,39 @@ body {
   -o-transition:opacity 0.5s ease;
 }
 
-.gallery-item-sec5.active {
+.gallery-item-sec4.active {
   opacity: 1;
 
 }
 
-.gallery-item-sec5 img {
+.gallery-item-sec4 img {
   max-width: 300px;
   height: 300px;
   border-radius: 5px;
 
 }
-.text-sec5{
+.text-sec4{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.gallery-item-sec5 h3 {
+.gallery-item-sec4 h3 {
   font-size: 18px;
 }
 
-.gallery-item-sec5 p {
+.gallery-item-sec4 p {
   margin-top: 5px;
   font-size: 14px;
   max-width: 300px;
 
 }
 
-.gallery-controls-sec5 {
+.gallery-controls-sec4 {
   display: flex;
   justify-content: center;
   gap:10px;
+  
 }
 
 .btn-layered-3d > ::before {
@@ -138,6 +139,6 @@ body {
 } 
  
 .btn-layered-3d--blue::before {
-  background: var(--color-dark-light);
-  box-shadow: var(--color-dark-light) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.625em 0px 0px;
+  background: var(--color-dark);
+  box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
 } 
