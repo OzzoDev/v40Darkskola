@@ -1,0 +1,26 @@
+.particle-container {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  top: -100px;
+  bottom: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 10px; /* Size of the particles */
+  height: 10px; /* Size of the particles */
+  background-color: rgba(255, 165, 0, 0.8); /* Example color */
+  border-radius: 50%; /* Make them circular */
+  animation: particle-motion linear infinite;
+}
+
+@keyframes particle-motion {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px); /* Vertical motion */
+  }
+}

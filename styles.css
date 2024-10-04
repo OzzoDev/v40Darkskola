@@ -244,3 +244,130 @@ body {
   background: var(--color-dark);
   box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
 } 
+
+.section-5 {
+  display: flex; /* Use flex display */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Gap between items */
+  padding: 100px 0; /* Adjust padding for the section if needed */
+  background: linear-gradient(to right, var(--color-dark), var(--color-dark-light)); /* Light background for the section */
+  position: relative;
+}
+
+.section-5 .card {
+  background: var(--color-medium); /* Updated card background color for better contrast */
+  border-radius: 20px; /* Updated border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: min(400px, 100%); /* Max width set to 400px */
+  height: 700px; /* Fixed height */
+  padding: 10px; /* Added padding */
+  text-align: center;
+  display: flex; /* Added flex display */
+  flex-direction: column; /* Set direction to column */
+  justify-content: space-between; /* Even spacing between elements */
+  align-items: center; /* Center all items in the card */
+  color: var(--color-lightest); /* All text set to lightest color */
+  position: relative;
+  z-index: 2;
+}
+
+.section-5 .card-back {
+  width: min(400px, 100%); /* Max width set to 400px */
+  height: 700px; /* Fixed height */
+  display: none; /* Initially hidden */
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  background-color: var(--color-medium);
+}
+
+.section-5 .card img {
+  width: 100%; /* Set width to 100% */
+  height: 400px; /* Updated height to 400px */
+  object-fit: cover; /* Ensures the image covers the area */
+  border-radius: 10px; /* Added border radius to the image */
+}
+
+.section-5 .card figcaption {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold; /* Made font bold */
+  margin: 10px 0; /* Optional margin for spacing */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Added text shadow */
+}
+
+.section-5 .card p {
+  position: relative; /* Set position to relative for pseudo-elements */
+  padding: 0 16px;
+  margin-bottom: 80px;
+  max-width: 80%; /* Set max width to 80% */
+  text-align: center; /* Center text within the paragraph */
+}
+
+.section-5 .card-back p {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Pseudo-elements for horizontal lines */
+.section-5 .card .card-front-p::before,
+.section-5 .card .card-front-p::after {
+  content: ""; /* Necessary for pseudo-elements */
+  position: absolute; /* Positioning */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 2px; /* Height of the line */
+  background-color: var(--color-light); /* Light grey from the palette */
+}
+
+.section-5 .card .card-front-p::before {
+  top: -10px; /* Position above the paragraph */
+}
+
+.section-5 .card p::after {
+  bottom: -10px; /* Position below the paragraph */
+}
+
+/* Button Styles */
+.section-5 .card button {
+  background-color: var(--color-dark-light); /* Button background color */
+  border: none;
+  color: var(--color-lightest); /* Button text color */
+  padding: 10px 20px;
+  border-radius: 10px; /* Updated border radius for the button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+  position: relative; /* Position for 3D effect */
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.section-5 .card button:hover {
+  background-color: var(--color-medium-light); /* Darker button color on hover */
+  transform: rotateY(180deg); /* Flip on hover */
+}
+
+/* Optional: Adding a wrapper for the button to handle the flip effect */
+.card-button-wrapper {
+  width: fit-content;
+  perspective: 1000px; /* Perspective for 3D effect */
+  margin-top: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+}
+
+.card-button {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back face when flipped */
+  transition: transform 0.6s; /* Smooth transition for flipping */
+}
+
+.card-button:hover {
+  transform: rotateY(180deg); /* Flip effect */
+}

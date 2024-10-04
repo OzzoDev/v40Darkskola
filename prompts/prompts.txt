@@ -1,5 +1,4 @@
 
-Section1-prompt3: ""
 ------Section3------------
 Section3-prompt1: "I want you to make a section for a website, it needs to be fully responsive and have great availability. use grid to make the layout of the section and it needs its own class called "section-3". I want a banner h2 with the image "deathwing-banner" and on the banner it should say "Deathwing"."
 
@@ -29,3 +28,110 @@ Section4-prompt1: "can you write me a responsive and good looking gallery that d
 Section4-prompt2: "can you make it more interactive, and only show one image at a time, there should be space for 6 images"
 
 Section4-prompt3: "exactly what i wanted! Can you make a cool transition between the images?"
+
+------Section 5-------------------
+
+Section5-prompt1: "I want some basic html code for a card with an img h2 under the img a paragrah in the middle and a read more button in the bottom of the card"
+
+Section5-prompt2: "Great make that three cards"
+
+Section5-prompt3: "In card one the h2 should say "Size Small", card two "Size Medium" and card three "Size Large""
+
+Section5-prompt4: 
+
+"Great the src from the images should be: card 1: "../img/dragon-orange-s", card 2: "../img/dragon-orange-m" , card 3: "../img/dragon-orange-l". 
+Also change the alt to somthing more descriptive based on the dragon's size, but do not use "An img of...". Instaed describe the image with out using the word image or img. 
+Then let add aria-labels and title attribute to the images in each card. 
+The value of the img aria-label attribute and title attribute must be something like the alt that describe the imgae but try to vary the values of the
+ alt, aria-label and title attribute for each image. And these values should be a description of the image but cannot contain words like an image of or img."
+
+Section5-prompt5: 
+
+"As the next step to populate the p element in each card come up with some creatvie text about the dragons life based. 
+Think like that it size represtens diffrents times in its life. The text on each card should be 30-40 words, and cannot be identical to text on other cards"
+
+Section5-prompt6: "I noticed a bug that the src value of each img does not have a file type add .webp to the src"
+
+Section5-prompt7: 
+
+"Now for the css, reset all styling and lets work in my styles.css. Limit the card max-width to 400px. 
+Which could be achived by using width: min(400px,100%) to allow the card to take up all available width as long as the card is not wider than 400px. 
+For the height make the card 700 px high. also add 10px padding to the card, and a boder radius of 20px. For the img set the with to 100% and object fit to cover"
+
+Section5-prompt8: "Since I have a wrapper of a section with a class called section-5 target the card in css like .section-5 .card and so on"
+
+Section5-prompt9: "Set the the height of the img to 400 px and the boder radius of img to 10 px"
+
+Section5-prompt10: "Lets take it back to html, instaed of using a h2 use a figure to wrap the img with a figcaption and put the the from the h2 into that figcaption"
+
+Section5-prompt11: "Great increase the font size to 2rem of the figcaption and make it bold"
+
+Section5-prompt12: "Add a small text shadow to the figcaption element"
+
+Section5-prompt13: "For layout purposes use flex on the card with direction set to column and then justify content so space between to have a even and smooth layout on all three cards"
+
+Section5-prompt14: 
+
+"Some more chnages css vise that need to be made are a border radius of the button set to 10 px and the max-width of the p element on the card set to 80%. 
+Also use align-items center on the card"
+
+Section5-prompt15: 
+
+"So there is the full css file with some colors and more. I want help with adding the colors to the card, 
+use the darker color further back and the ligher one more forword, to the text that is. 
+Combine the colors from the prefined palatte as that but do not use the darkest color as that will be the bg of the wrapper later on"
+
+Section5-prompt16: 
+
+"Here is the predfined palette: :root {
+  --color-lightest: #e6e6fa;
+  --color-light: #d4d4e5;
+  --color-medium-light: #c3c3d0;
+  --color-medium: #b2b2bb;
+  --color-dark-light: #a1a1a7;
+  --color-dark: #909093;
+}"
+
+Section5-prompt17: "Set this as the card bg color: --color-dark-light and all text on the card must have this color: --color-lightest: #e6e6fa;"
+
+Section5-prompt18: 
+
+"Change up the colors from the palette ro reslove this accessibility error:
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+figcaption
+div.card
+p
+div.card
+button
+figcaption
+div.card
+p
+div.card
+button
+figcaption
+div.card
+p
+div.card
+button"
+
+Section5-prompt19: 
+
+"To style the card some more make the p element position relative and add both before and after peudo elements 
+positioned absolutes and the before 20px above the p and the after 20px below the p. 
+The peudo elements should just be a string line with 100% width and 2px height with a bg color of a light grey from the predefined palette"
+
+Section5-prompt20: "Now lets create a simple filp animation to apply to the button when its is hovered so that it gets filipped on the a-axis when hovered"
+
+Section5-prompt21: "Find a way to place the button at the bottom of the card since now it just floating out of position alhough the animation is working:"
+
+Section5-prompt22: "In the section-5 create a css grid with the columns defined as repeat(auto-fit, minmax(400px, 1fr)); The grid should also have a base gap of 30px"
+
+Section5-prompt23: "Use flex and flex wrap instaed on the section-5"
+
+Section5-prompt24: "How to use js and css as well as html to show the backside of these cards with a longer text about the dragon when the button is read more button is clicked"
+
+Section5-prompt25: "When I press read more then read less the read more button gets placed in the left bottom corner, do not change the read more postion after closeing the read more text also make sure there are no peudo elements on the back side of the card"
+
+Section5-prompt26: "Now take these card and on the backside of the cards includes a descriptive text about the dragon and its life based on its size, no card can have the same text. The text must be 160-180 words spread accross three p tags"
