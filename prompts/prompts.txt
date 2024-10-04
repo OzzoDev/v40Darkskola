@@ -3,3 +3,25 @@ Section1-prompt1: ""
 Section1-prompt2: ""
 
 Section1-prompt3: ""
+
+Section3-prompt1: "I want you to make a section for a website, it needs to be fully responsive and have great availability. use grid to make the layout of the section and it needs its own class called "section-3". I want a banner h2 with the image "deathwing-banner" and on the banner it should say "Deathwing"."
+
+Section3-prompt2: "change the banner class to banner-section-3"
+
+Section3-prompt3: "add a paragraph under the banner that describes deathwing from world of warcraft"
+
+Section3-prompt4: "change the description class to "description-deathwing""
+
+Section3-prompt5: "below the paragraph I want 2 images with the file path "/images-section-3/deathwing1" and "/images-section-3/deathwing2""
+
+Section3-prompt6: "can you change the name of the image container to "image-container-section-3" and when writing new classes for the rest of this chat add "-section-3" to them"
+
+Section3-prompt7: "I want the section to stop scaling at 1400px width but remain centered"
+
+Section3-prompt8: "I will paste my html and css here: ..."
+
+Section3-prompt9: "remove the max width on section-3 and make sure the text in description-deathwing doesnt stretch too far to keep the content centered"
+
+Section3-prompt10: "the images grow too large, add a maxwidth of 600px to them"
+
+Section3-prompt11: "add a maxwidth of 1200px to the image container"
