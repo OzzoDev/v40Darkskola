@@ -7,7 +7,7 @@
   color: #ffffff; /* Set text color to white for contrast */
 }
 
-/* Styles for the navbar */
+
 .nav-section6 {
   background: #2c3e50;
   text-align: center;
@@ -82,9 +82,19 @@
 }
 
 
-main {
+.main-content-sec2 {
   padding: 40px;
-  animation: fadeIn 2s ease; /* Smooth entrance */
+  background-color: #1a1a1a; /* Add a background color for distinction */
+  animation: fadeIn 2s ease; /* Smooth fade-in effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Add some shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease; /* Add transition for smooth effects */
+}
+
+
+.main-content-sec2:hover {
+  transform: scale(1.02); /* Slight enlargement on hover */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Stronger shadow on hover */
 }
 
 .about-sec6-sec, .favorite-dragons-sec {
