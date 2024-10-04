@@ -28,16 +28,8 @@ body {
   color: var(--color-lightest);
 }
 
-/* Main-innehåll */
-main {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* WCAG-kontrast och fontstorlek för rubriker och text */
-h2, h3 {
+.drakjörgen h2, .drakjörgen h3 {
   color: #ffdd00;
 }
 
@@ -49,6 +41,7 @@ h2, h3 {
   gap: 20px;
   width: 100%;
   max-width: 1200px;
+  margin: auto;
 }
 
 /* Drakkorten */
