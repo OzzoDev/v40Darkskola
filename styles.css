@@ -44,15 +44,41 @@ nav a:hover {
   box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing hover effect */
 }
 
-h2 {
+h4 {
   color: #ffffff;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 5px; /* Increase letter spacing */
   margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  animation: fadeInDown 1s ease; /* Animated entrance */
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #ffcc00, #ff4500); /* Gradient text effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  animation: glowingText 2s infinite alternate; /* Glowing animation */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  padding: 10px;
+  transition: transform 0.5s ease, letter-spacing 0.3s ease; /* Smooth transition */
 }
+
+h4:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  letter-spacing: 7px; /* Increase spacing on hover */
+  color: #ffcc00;
+  text-shadow: 0 0 15px #ffcc00, 0 0 20px #ff4500; /* Glowing shadow on hover */
+}
+
+/* Glowing text animation */
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+  }
+}
+
 
 main {
   padding: 40px;
