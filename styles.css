@@ -7,8 +7,8 @@ body {
   color: #ffffff; /* Set text color to white for contrast */
 }
 
-
-nav {
+/* Styles for the navbar */
+.nav-section6 {
   background: #2c3e50;
   text-align: center;
   padding: 15px 0;
@@ -18,18 +18,18 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for nav */
 }
 
-nav ul {
+.nav-section6 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav ul li {
+.nav-section6 ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-nav a {
+.nav-section6 a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
@@ -38,11 +38,12 @@ nav a {
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
 }
 
-nav a:hover {
+.nav-section6 a:hover {
   color: #ffcc00; /* Change color on hover */
   transform: scale(1.2); /* Slightly increase size on hover */
   box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing hover effect */
 }
+
 
 h4 {
   color: #ffffff;
