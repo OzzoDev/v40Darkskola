@@ -19,6 +19,10 @@
   width: 5px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Grundinställningar för body */
 body {
   margin: 0;
@@ -27,7 +31,137 @@ body {
   background-color: var(--color-dark);
   color: var(--color-lightest);
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100000000;
+}
 
+.header__logo img {
+  max-width: 150px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-item {
+  margin-left: 1rem;
+}
+
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__dropdown {
+  position: relative;
+}
+
+.header__menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.header__dropdown-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  transition: right 0.3s ease;
+}
+
+.header__dropdown-item {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header__dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.header__dropdown-menu.show {
+  right: 0;
+}
+
+@media (min-width: 769px) {
+  .header__dropdown {
+    display: none;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+}
+
+.header__dropdown-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.header__dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.header__dropdown-close {
+  text-align: right;
+}
+
+.header__close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header__dropdown-menu.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header__nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__nav-item {
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
+
+}
 /* WCAG-kontrast och fontstorlek för rubriker och text */
 .drakjörgen h2, .drakjörgen h3 {
   color: #ffdd00;

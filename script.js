@@ -8,18 +8,33 @@ const nextBtn = document.getElementById('nextBtn-sec4');
 prevBtn.addEventListener('click', showPrevious);
 nextBtn.addEventListener('click', showNext);
 
-
+// Gallery navigation functions
 function showPrevious() {
-    galleryItems[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-    galleryItems[currentIndex].classList.add('active');
-  }
+  galleryItems[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+  galleryItems[currentIndex].classList.add('active');
+}
 
-  function showNext() {
-    galleryItems[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % galleryItems.length;
-    galleryItems[currentIndex].classList.add('active');
-  }
+function showNext() {
+  galleryItems[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % galleryItems.length;
+  galleryItems[currentIndex].classList.add('active');
+}
+
+// Header dropdown menu functionality
+document.querySelector('.header__menu-toggle').addEventListener('click', function() {
+  const dropdownMenu = document.querySelector('.header__dropdown-menu');
+
+  dropdownMenu.classList.toggle('show');
+
+});
+
+document.querySelector('.header__close-button').addEventListener('click', function() {
+    const dropdown = document.querySelector('.header__dropdown-menu');
+    dropdown.classList.remove('show');
+
+  });
+
 
 document.querySelectorAll(".read-more").forEach((button) => {
   button.addEventListener("click", () => {
@@ -116,6 +131,12 @@ function handleQuizSubmit() {
     const resultDiv = document.getElementById('quiz-result');
     resultDiv.innerHTML = `You scored ${score} out of ${quizQuestions.length}.`;
 }
+
+// Load quiz when the page loads
+window.onload = function() {
+    loadQuiz();
+    document.getElementById('submit-quiz').addEventListener('click', handleQuizSubmit);
+};
 
 // Load quiz when the page loads
 window.onload = function() {
