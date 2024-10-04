@@ -1,4 +1,4 @@
-body {
+.custom-body-sec2 {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -45,7 +45,8 @@ body {
 }
 
 
-h4 {
+/* Class for all dragon headings */
+.dragon-heading {
   color: #ffffff;
   text-align: center;
   font-size: 2.5em;
@@ -63,7 +64,7 @@ h4 {
   transition: transform 0.5s ease, letter-spacing 0.3s ease; /* Smooth transition */
 }
 
-h4:hover {
+.dragon-heading:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
   letter-spacing: 7px; /* Increase spacing on hover */
   color: #ffcc00;
