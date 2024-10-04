@@ -1,4 +1,4 @@
-.custom-body-sec2 {
+.custom-body-sec6 {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -111,7 +111,7 @@
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); /* Stronger shadow */
 }
 
-.three-column-layout {
+.three-column-layout-sec6 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -135,7 +135,7 @@
   flex: 1 1 50%; /* Adjusts the image to occupy 50% of the container */
 }
 
-.text-content {
+.text-content-sec6 {
   flex: 1 1 50%; /* Adjusts the text to occupy 50% of the container */
 }
 
