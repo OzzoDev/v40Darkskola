@@ -1,3 +1,4 @@
+-------Section 3---------
 Section3-Result1: "
 This code creates a responsive section with the class "section-3" using CSS Grid. It includes a banner with an h2 element displaying "Deathwing". The banner is set up to have a background image, but you'll need to replace 'deathwing-banner.jpg' with the actual path to your image file.
 
@@ -107,3 +108,10 @@ Section3-Result11: "    Added max-width: 1200px to .image-container-section-3: T
     Centered the image container using margin: 0 auto to ensure it's positioned centrally within the page.
 
 Now the .image-container-section-3 will be limited to a maximum width of 1200px, keeping the layout neat and balanced. Let me know if you need further adjustments!"
+
+------Section 4---------
+Section5-Result1: "Sure, here's a responsive and good-looking gallery that displays both images and text in HTML and CSS:"
+
+Section5-Result2: "Sure, I can make the gallery more interactive and show one image at a time, with space for 6 images. Here's the updated HTML and CSS code:"
+
+Section5-Result3: "Sure, I can add a cool transition effect between the images. Here's the updated code with a fade transition:"

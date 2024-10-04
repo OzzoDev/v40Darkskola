@@ -122,3 +122,125 @@ body {
     padding: 0 10px;
   }
 }
+
+/*Section 4*/
+.section4{
+  max-height:min-content;
+  background-color: var(--color-dark-light);
+  background-image: url("imagesSection4/sssurf.svg");
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.gallery-sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:400px;
+  position: relative;
+  overflow:hidden;
+}
+
+.gallery-item-sec4 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  transition:opacity 0.5s ease;
+  -webkit-transition:opacity 0.5s ease;
+  -moz-transition:opacity 0.5s ease;
+  -ms-transition:opacity 0.5s ease;
+  -o-transition:opacity 0.5s ease;
+}
+
+.gallery-item-sec4.active {
+  opacity: 1;
+
+}
+
+.gallery-item-sec4 img {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.text-sec4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery-item-sec4 h3 {
+  font-size: 18px;
+}
+
+.gallery-item-sec4 p {
+  margin-top: 5px;
+  font-size: 14px;
+  max-width: 350px;
+
+}
+
+.gallery-controls-sec4 {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  
+}
+
+.btn-layered-3d > ::before {
+  box-sizing: border-box;
+}
+
+.btn-layered-3d {
+  width: 180px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.15em 2em;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, background 0.15s ease-out;
+} 
+ 
+.btn-layered-3d::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  border-radius: inherit;
+  transform: translate3d(0px, 0.75em, -1em);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+} 
+ 
+.btn-layered-3d:hover {
+  transform: translateY(0.25em);
+} 
+ 
+.btn-layered-3d:hover::before {
+  transform: translate3d(0px, 0.5em, -1em);
+} 
+ 
+.btn-layered-3d--blue {
+  color: var(--color-lightest);
+  background: var(--color-dark);
+  border: 2px solid var(--color-lightest);
+} 
+ 
+.btn-layered-3d--blue::before {
+  background: var(--color-dark);
+  box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
+} 
