@@ -244,7 +244,6 @@ body {
   background: var(--color-dark);
   box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
 } 
-<<<<<<< HEAD
 @media (min-width:740px){
   .btn-layered-3d{
     display:none;
@@ -259,5 +258,3 @@ body {
     height: auto;
   }
 }
-=======
->>>>>>> origin/feature-section4
