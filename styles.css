@@ -1,24 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --color-lightest: #e6e6fa;
-  --color-light: #d4d4e5;
-  --color-medium-light: #c3c3d0;
-  --color-medium: #b2b2bb;
-  --color-dark-light: #a1a1a7;
-  --color-dark: #909093;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
 body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #2c3e50); /* Smooth gradient background */
+  color: #ffffff; /* Set text color to white for contrast */
 }
+
+
+nav {
+  background: #2c3e50;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky; /* Sticky navigation bar */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for nav */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+nav a:hover {
+  color: #ffcc00; /* Change color on hover */
+  transform: scale(1.2); /* Slightly increase size on hover */
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing hover effect */
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation: fadeInDown 1s ease; /* Animated entrance */
+}
+
+main {
+  padding: 40px;
+  animation: fadeIn 2s ease; /* Smooth entrance */
+}
+
+.about-sec, .favorite-dragons-sec {
+  margin: 30px 0;
+  padding: 30px;
+  background: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.about-sec:hover, .favorite-dragons-sec:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); /* Stronger shadow */
+}
+
+.three-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.side-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 12px; /* Round image corners */
+  transition: transform 0.6s ease, filter 0.6s ease; /* Smooth scale and filter */
+}
+
+.side-image:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.large-image {
+  flex: 1 1 50%; /* Adjusts the image to occupy 50% of the container */
+}
+
+.text-content {
+  flex: 1 1 50%; /* Adjusts the text to occupy 50% of the container */
+}
+
