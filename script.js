@@ -11,7 +11,13 @@ const rapNames = [
     "Smoke Breath"
 ];
 
-document.getElementById('generateNameButton').addEventListener('click', () => {
-    const randomName = rapNames[Math.floor(Math.random() * rapNames.length)];
-    document.getElementById('dragonNameDisplay').textContent = `Rap Name: ${randomName}`;
-});
+function generateDragonRapName() {
+    const randomIndex = Math.floor(Math.random() * dragonRapNames.length);
+    return dragonRapNames[randomIndex];
+  }
+  
+  // Event listener for the button
+  document.getElementById("generate-dragon-name-button").addEventListener("click", function() {
+    const dragonRapName = generateDragonRapName();
+    document.getElementById("dragon-name-display").innerText = dragonRapName;
+  });
