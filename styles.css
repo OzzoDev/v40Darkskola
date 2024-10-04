@@ -132,13 +132,13 @@ body {
   transform: translate3d(0px, 0.5em, -1em);
 } 
  
-.btn-layered-3d--blue {
+.btn-layered-3d {
   color: var(--color-lightest);
   background: var(--color-dark);
   border: 2px solid var(--color-lightest);
 } 
  
-.btn-layered-3d--blue::before {
+.btn-layered-3d::before {
   background: var(--color-dark);
   box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
 } 
@@ -152,5 +152,7 @@ body {
     position:relative;
     flex-direction: column;
     transition:none;
+    width: 325px;
+    height: auto;
   }
 }
