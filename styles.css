@@ -142,3 +142,15 @@ body {
   background: var(--color-dark);
   box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
 } 
+@media (min-width:740px){
+  .btn-layered-3d{
+    display:none;
+  }
+  .gallery-item-sec4{
+    display:flex;
+    opacity:1;
+    position:relative;
+    flex-direction: column;
+    transition:none;
+  }
+}
