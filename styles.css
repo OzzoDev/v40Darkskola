@@ -85,7 +85,7 @@ main {
   animation: fadeIn 2s ease; /* Smooth entrance */
 }
 
-.about-sec, .favorite-dragons-sec {
+.about-sec6-sec, .favorite-dragons-sec {
   margin: 30px 0;
   padding: 30px;
   background: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
@@ -94,7 +94,7 @@ main {
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.about-sec:hover, .favorite-dragons-sec:hover {
+.about-sec6-sec:hover, .favorite-dragons-sec:hover {
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); /* Stronger shadow */
 }
