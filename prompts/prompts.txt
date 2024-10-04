@@ -25,3 +25,29 @@ Section3-prompt9: "remove the max width on section-3 and make sure the text in d
 Section3-prompt10: "the images grow too large, add a maxwidth of 600px to them"
 
 Section3-prompt11: "add a maxwidth of 1200px to the image container"
+
+footer-prompt1: "create a footer for my website about dragons, I want it to be dark and have a fiery animation"
+
+footer-prompt2: "the animation looks awful, it should look like flame rising from the bottom"
+
+footer-prompt3: "the flame animation is not working"
+
+footer-prompt4: "the flames dont look like fire and I dont want them to go over the footer text"
+
+footer-prompt5: "the flames are too round and still dont look like actual fire, do you have solution for that?"
+
+footer-prompt6: "im not happy with the result, is it possible to make a much fancier animation using javascript?"
+
+footer-prompt7: "I have pasted your code into my html and css, I pasted the javascript into a separate file how do I link the javascript file?"
+
+footer-prompt8: "I have used your code and linked the javascript file but there is still no animation"
+
+footer-prompt9: "I just misspelled the filename slightly, the animation is working now but it looks like a bunch of colorful balls and not like a flame at all"
+
+footer-prompt10: "with the updated javascript the "flames" are black and only animates once when the page is loaded"
+
+footer-prompt11: "now its just oval balls, does not look like flames at all, is there a way to actually make the flames I want with javascript or is something else needed?"
+
+footer-prompt12: "can you give me the full javascript code to implement the Bezier Curves option"
+
+footer-prompt13: "looks good now but can you make the flames animate a bit slower?"
