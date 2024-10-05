@@ -28,42 +28,6 @@ body {
   overflow-x:hidden;
 }
 
-
-
-/* Sebbes kod CSS section 7 */
-
-.section-7 {
-  line-height: 1.6;
-  background-color: #1e1e1e;
-  color: #f4f4f4;
-}
-
-.section-7 .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-7 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.section-7 .gallery-item:hover {
-  transform: scale(1.05);
-}
-
-.section-7 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -198,25 +162,133 @@ body {
 
 }
 
-.section-7 .gallery-item .caption {
+/* Sebbes kod CSS section 7 */
+.section-7 {
+  line-height: 1.6;
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+}
+
+.section-7 .auroraBackground {
+  padding:40px;
+  padding-bottom:60px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), 
+              url('img/section7aurora.jpg'); /* Replace with your aurora image URL */
+  background-size: cover;
+  color: #f4f4f4; /* Adjust text color for contrast */
+  font-family: 'Arial', sans-serif; /* Change to your preferred font */
+}
+
+/* Optional: Add a subtle movement animation */
+@keyframes aurora-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+.section-7 .auroraBackground .aurora-animation {
+  animation: aurora-move 15s linear infinite;
+}
+
+.aurora-text-background {
+  position: relative; /* Position for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Prevent overflow from pseudo-elements */
+}
+
+/* Pseudo-element for the aurora effect */
+.aurora-text-background::before {
+  content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 0.5rem;
+  left: 50%;
+  top: 50%;
+  width: 200%; /* Wider glow */
+  height: 200%; /* Higher glow */
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.2), rgba(0, 128, 255, 0.2), rgba(128, 0, 255, 0.2));
+  border-radius: 50%; /* Circular gradient effect */
+  transform: translate(-50%, -50%); /* Center the gradient */
+  opacity: 0.5; /* Subtle opacity for a softer effect */
+  animation: aurora 8s infinite alternate; /* Slower animation for subtlety */
+  z-index: 0; /* Ensure it stays behind the text */
+}
+
+@keyframes aurora {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+      transform: translate(-50%, -50%) scale(1.05); /* Slight size increase */
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1); /* Return to original size */
+  }
+}
+
+
+.section-7 .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:15px;
+  padding-top:2rem;
+}
+
+/* Updated .gallery-item without box-shadow */
+.section-7 .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
   text-align: center;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+}
+
+/* Apply box-shadow to the image only */
+.section-7 .gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow applied to image */
+  border-radius: 8px; /* Maintain border-radius */
+}
+
+/* Always display the caption below the image */
+.section-7 .gallery-item .caption {
+  color: white;
+  background-color: rgba(0, 10, 10, 0.8);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 0 0 8px 8px; /* Optional for rounding the bottom */
+  max-width: 100%; /* Ensure it stays within its parent */
+  box-sizing: border-box; /* Include padding in the total size */
+  word-wrap: break-word; /* Break long words to avoid overflow */
+}
+
+.section-7 .gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .section-7 .gallery-item:hover .caption {
   transform: translateY(0);
 }
 
+.section-7 .gallery-item .caption-title {
+  font-size: 1.6rem; /* Slightly larger font size for emphasis */
+  font-weight: bold; /* Bold text for prominence */
+  color: #ffdd57; /* A bright color to stand out */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for contrast */
+  padding: 0.5rem; /* Padding for spacing around the text */
+  padding-top:1rem;
+  padding-bottom:1rem;
+  margin-top: -5px;
+}
+
 .section-7 .dragon-trapper-title {
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 2rem;
   text-align: center;
   margin: 0 auto;
@@ -230,18 +302,26 @@ body {
 .section-7 .trapper-page {
   position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
-}
-
-.section-7 .big-image {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  display: block;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* align-content: flex-end; */
+  align-items: stretch;
 }
 
-.section-7 .image-overlay {
+.section-7 .section-7.big-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area */
+  display: block; /* Ensure it behaves as a block element */
+  max-width: 100%; /* Ensure it doesn't exceed parent width */
+  margin: 0; /* No margin needed for centering */
+}
+
+.section-7 .section-7-image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -251,6 +331,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .section-7 .image-text {
@@ -278,11 +359,12 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.section-7 .cta-button:hover {
-  background-color: #f0f0f0;
+.section-7 .cta-button:hover, .section-7 .cta-button:focus {
+  background-color: #ff4500; /* A fiery color */
+  color: #fff;
 }
 
 .section-7 h2 {
@@ -290,12 +372,14 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .section-7 h3 {
-  color: #ff6f61;
+  color: #ffdd57;
   font-size: 1.8rem;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .section-7 h4 {
@@ -303,6 +387,7 @@ body {
   font-size: 1.6rem;
   margin-bottom: 10px;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .section-7 p {
@@ -320,7 +405,7 @@ body {
 /* Aesthetic padding for the text */
 .section-7 .umea-trapper-content {
   padding: 40px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -333,6 +418,35 @@ body {
 
 .section-7 a:hover {
   color: #ff6f61;
+}
+
+.fire-dragon-background {
+  position: relative; /* Position for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Prevent overflow from pseudo-elements */
+}
+
+/* Pseudo-element for the fire effect */
+.fire-dragon-background::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200%; /* Double width for a wider glow */
+  height: 200%; /* Double height for a wider glow */
+  background: radial-gradient(circle, rgba(255, 69, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+  border-radius: 50%; /* Circular gradient */
+  transform: translate(-50%, -50%); /* Center the gradient */
+  opacity: 0.8; /* Slightly opaque for a subtle effect */
+  animation: flicker 18s infinite alternate; /* Animation for a flicker effect */
+}
+
+@keyframes flicker {
+  0%, 100% {
+      opacity: 0.6; /* Fade in and out */
+  }
+  50% {
+      opacity: 0.9; /* Brightest at the middle of the animation */
+  }
 }
 
 @media (max-width: 768px) {
@@ -355,6 +469,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 
 /* Sebbes kod CSS section 7 */
 
