@@ -623,7 +623,7 @@ input[type="radio"] {
       padding: 3.5rem; /* Öka padding */
   }
 }
-
+/*Start Tobias CSS section-3*/
 .section-3 {
   display: grid;
   grid-template-columns: 1fr;
@@ -723,7 +723,7 @@ input[type="radio"] {
     padding: 0 10px;
   }
 }
-
+/*End Tobias CSS section-3*/
 /*Section 4*/
 .section4{
   max-height:min-content;
@@ -1274,6 +1274,7 @@ input[type="radio"] {
   }
 }
 /* Slut franks css */
+/*Start Tobias CSS Footer*/
 footer p {
   margin: 0;
   font-size: 16px;
@@ -1298,3 +1299,4 @@ footer p {
   height: 150px;
   z-index: 1;
 }
+/*End Tobias CSS Footer*/
