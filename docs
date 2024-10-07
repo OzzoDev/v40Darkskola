@@ -1,0 +1,180 @@
+Scrum master - Oscar
+Produktägare - Frank
+
+Dragonschool LLC
+#e6e6fa
+#d4d4e5
+#c3c3d0
+#b2b2bb
+#a1a1a7
+#909093
+Mobile first!
+Ett stort plus om du har en focus drake men varje drake som är med på hemsidan måste ha en spännande text. 
+Jag vill ha sidan på engelska
+
+
+:root {
+    --color-lightest: #e6e6fa;
+    --color-light: #d4d4e5;
+    --color-medium-light: #c3c3d0;
+    --color-medium: #b2b2bb;
+    --color-dark-light: #a1a1a7;
+    --color-dark: #909093;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Namn
+Roll
+Uppgift
+git
+Kommentarer och regler
+
+
+
+
+
+
+
+
+
+
+Frank
+Produktägare
+Gör sektion 1
+Feature-section1
+
+
+Oscar
+Scrum master
+Gör sektion 5 + (nav boy)
+Feature-section5
+Nav ska vara en hamburgare meny
+Sebbe
+dev
+Gör sektion 7 + footer
+Feature-section7
+
+
+Elias
+dev
+Gör sektion 2 + footer
+Feature-section2
+
+
+Tobbe
+dev
+Gör sektion 3 + footer
+Feature-section3
+
+
+Andy
+dev
+Gör sektion 4 + (nav boy)
+Feature-section4
+
+
+Robin
+dev
+Gör sektion  6 + (nav boy)
+Feature-section6
+
+
+Den osynliga medlemmen
+Får inte vara med
+Känna sig utanför
+
+
+Bekanta sig med ensamhet
+
+
+Git Regler
+Uppstartsmöte - Sprintplanering : 
+Vi gör allt i git på engelska. Både commits och branches etc. 
+Branches: Main > Develop > Feature-header > Feature- main > Feature-footer
+Main är slutsteget när man är klar med produkten
+Develop är dit du trycker dina klara branches så du kan debugga innan main. 
+Feature-header > Feature- main > Feature-footer är vad du jobbar i men om många jobbar i main tex kör vi Feature-section1 Feature-section2 etc underliggande där du pushar till feature-main när du är klar. 
+
+Trello
+Vi kör på svengelska i trello. 
+Sätta upp en trello där vi smäller upp allt som ska vara med i projektet.
+Vi sitter och planerar allt som ska ligga i projektet i trello, vi har bestämt oss för att köra en section var i main samt en footer och en header. 
+Vi har bestämt att torsdag är det mycket planering, sen blir det jobb med sections på fredag. 
+Torsdagens jobb kommer att bli en colorpalette, sätta upp en git, bestämma innehåll, prata om hur vi ska jobba med AI för att göra rätt med uppgiften. 
+
+Planeringsmöte + stand up avslutas och alla har blivit tilldelad en uppgift
+
+
+
+Standup (morgonmöte fredag)
+Vilken ai har grabbarna rockat? 
+Sebbe chatgpt
+Elias chatgpt
+Tobias Poe (Claude) och ChatGPT.
+Andy cloud samt stabeldiffusion
+Oscar körde poe med chat gpt 4o mini, kung fu img
+Robin kör Chatgpt och Poe med olika raddar.
+Frank kör Poe
+Vi fortsätter med sections samt pratade igenom classes för att inte få konflikter senare. 
+Nu kör vi på! Och tar ett möte lite senare. 
+
+Möte 2 Fredag 10:25
+Vi checkade hur alla låg till och såg till att vi hinner och att ingen har problem som vi kan hjälpa till med. Alla var på rätt spår och vi har bestämt att vi ska börja merga in från våra egna section branches till develop. 
+
+
+
+Möte 11:12
+Vi har merge problem, Oscar Scramble och Eggmaster är med och ser till att det blir löst. Han sitter med i hela processen. 
+
+Möte 12:00
+Vi har mergat in alla section till Develop. 
+Vi gör sista touches på header samt footer. 
+
+12:40
+Nu har vi mergat in både footer o header
+
+Möte Måndag 10:00
+Vi gör sista touches and mergar till main.
+Planering av presentation.
+Vi bestämde att det var dax att merga in i main ser ifall vi stöter på någon ny bugg
+
+
+
+
+1. Problem med mobilvyn efter merge till main
+Efter att vi mergade in våra senaste ändringar till main uppstod ett problem som påverkade mobilvyn. Specifikt handlade det om hur layouten reagerade i telefonläge. Lyckligtvis identifierade vi snabbt felet och kunde lösa det tillsammans utan större svårigheter. Samarbetet flöt på smidigt och buggen var åtgärdad inom några minuter. Riktigt bra teamwork!
+2. Planering och Genomförande
+Vår planeringsfas gick otroligt bra, och vi följde våra mål med precision. Tack vare tydliga riktlinjer och en välstrukturerad plan lyckades vi genomföra projektet på ett effektivt sätt.
+Dock stötte vi på ett mindre hinder när det gällde färgpaletten, som föreslogs av ChatGPT. Även om den var estetiskt tilltalande, innebar den vissa tillgänglighetsutmaningar, framförallt när det gäller kontrasten. På vissa sektioner blev kontrasten mellan text och bakgrund för svag, vilket kan försvåra läsbarheten för användare med synnedsättningar. Vi är medvetna om detta och planerar att åtgärda det i kommande versioner för att uppfylla tillgänglighetsstandarder.
+3. Åtgärder för Tillgänglighet
+För att säkerställa förstklassig tillgänglighet använde vi oss av Lighthouse som verktyg för att granska webbplatsens prestanda och följa riktlinjerna för tillgänglighet. Lighthouse gav oss värdefulla insikter om var vi kan förbättra oss, särskilt när det gäller kontrast och designval som påverkar användarvänligheten. Vi kommer fortsätta att använda Lighthouse och andra verktyg för att förfina och förbättra användarupplevelsen framöver.
+
+
+
+
+
+
+
+
+
