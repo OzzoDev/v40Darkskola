@@ -1020,7 +1020,8 @@ footer {
 }
 
 .section-5 .card-back p {
-  width: 100%;
+  width: 90%;
+  margin: 4rem auto;
   max-width: 100%;
   text-align: left;
 }
