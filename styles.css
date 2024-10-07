@@ -5,15 +5,21 @@
 
 /* Färgschema */
 :root {
-  --color-lightest: #ffffff;  /* Adjusted for better contrast */
-  --color-light: #d9d9d9;     /* Light gray */
-  --color-medium-light: #b0b0b0; /* Medium light gray */
-  --color-medium: #8c8c8c;    /* Medium gray */
-  --color-dark-light: #707070; /* Dark light gray */
-  --color-dark: #4d4d4d;      /* Dark gray */
+  --color-lightest: #ffffff;
+  /* Adjusted for better contrast */
+  --color-light: #d9d9d9;
+  /* Light gray */
+  --color-medium-light: #b0b0b0;
+  /* Medium light gray */
+  --color-medium: #8c8c8c;
+  /* Medium gray */
+  --color-dark-light: #707070;
+  /* Dark light gray */
+  --color-dark: #4d4d4d;
+  /* Dark gray */
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -24,8 +30,8 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: var(--color-dark);
   color: var(--color-lightest);
-  max-width:100vw;
-  overflow-x:hidden;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .header {
@@ -42,8 +48,8 @@ body {
 
 .header__logo img {
   max-height: 60px;
-  filter:invert();
-  -webkit-filter:invert();
+  filter: invert();
+  -webkit-filter: invert();
 }
 
 .header__nav {
@@ -170,19 +176,27 @@ body {
 }
 
 .section-7 .auroraBackground {
-  padding:40px;
-  padding-bottom:60px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), 
-              url('img/section7aurora.jpg'); /* Replace with your aurora image URL */
+  padding: 40px;
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%),
+    url('img/section7aurora.jpg');
+  /* Replace with your aurora image URL */
   background-size: cover;
-  color: #f4f4f4; /* Adjust text color for contrast */
-  font-family: 'Arial', sans-serif; /* Change to your preferred font */
+  color: #f4f4f4;
+  /* Adjust text color for contrast */
+  font-family: 'Arial', sans-serif;
+  /* Change to your preferred font */
 }
 
 /* Optional: Add a subtle movement animation */
 @keyframes aurora-move {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .section-7 .auroraBackground .aurora-animation {
@@ -190,8 +204,10 @@ body {
 }
 
 .aurora-text-background {
-  position: relative; /* Position for absolute positioning of pseudo-elements */
-  overflow: hidden; /* Prevent overflow from pseudo-elements */
+  position: relative;
+  /* Position for absolute positioning of pseudo-elements */
+  overflow: hidden;
+  /* Prevent overflow from pseudo-elements */
 }
 
 /* Pseudo-element for the aurora effect */
@@ -200,25 +216,36 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 200%; /* Wider glow */
-  height: 200%; /* Higher glow */
+  width: 200%;
+  /* Wider glow */
+  height: 200%;
+  /* Higher glow */
   background: linear-gradient(180deg, rgba(0, 255, 255, 0.2), rgba(0, 128, 255, 0.2), rgba(128, 0, 255, 0.2));
-  border-radius: 50%; /* Circular gradient effect */
-  transform: translate(-50%, -50%); /* Center the gradient */
-  opacity: 0.5; /* Subtle opacity for a softer effect */
-  animation: aurora 8s infinite alternate; /* Slower animation for subtlety */
-  z-index: 0; /* Ensure it stays behind the text */
+  border-radius: 50%;
+  /* Circular gradient effect */
+  transform: translate(-50%, -50%);
+  /* Center the gradient */
+  opacity: 0.5;
+  /* Subtle opacity for a softer effect */
+  animation: aurora 8s infinite alternate;
+  /* Slower animation for subtlety */
+  z-index: 0;
+  /* Ensure it stays behind the text */
 }
 
 @keyframes aurora {
   0% {
-      transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
+
   50% {
-      transform: translate(-50%, -50%) scale(1.05); /* Slight size increase */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slight size increase */
   }
+
   100% {
-      transform: translate(-50%, -50%) scale(1); /* Return to original size */
+    transform: translate(-50%, -50%) scale(1);
+    /* Return to original size */
   }
 }
 
@@ -229,8 +256,8 @@ body {
   gap: 1.5rem;
   max-width: 1400px;
   margin: 0 auto;
-  padding:15px;
-  padding-top:2rem;
+  padding: 15px;
+  padding-top: 2rem;
 }
 
 /* Updated .gallery-item without box-shadow */
@@ -248,8 +275,10 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow applied to image */
-  border-radius: 8px; /* Maintain border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Shadow applied to image */
+  border-radius: 8px;
+  /* Maintain border-radius */
 }
 
 /* Always display the caption below the image */
@@ -261,10 +290,14 @@ body {
   padding-top: 2rem;
   font-size: 1.2rem;
   text-align: center;
-  border-radius: 0 0 8px 8px; /* Optional for rounding the bottom */
-  max-width: 100%; /* Ensure it stays within its parent */
-  box-sizing: border-box; /* Include padding in the total size */
-  word-wrap: break-word; /* Break long words to avoid overflow */
+  border-radius: 0 0 8px 8px;
+  /* Optional for rounding the bottom */
+  max-width: 100%;
+  /* Ensure it stays within its parent */
+  box-sizing: border-box;
+  /* Include padding in the total size */
+  word-wrap: break-word;
+  /* Break long words to avoid overflow */
 }
 
 .section-7 .gallery-item:hover {
@@ -277,13 +310,18 @@ body {
 }
 
 .section-7 .gallery-item .caption-title {
-  font-size: 1.6rem; /* Slightly larger font size for emphasis */
-  font-weight: bold; /* Bold text for prominence */
-  color: #ffdd57; /* A bright color to stand out */
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for contrast */
-  padding: 0.5rem; /* Padding for spacing around the text */
-  padding-top:1rem;
-  padding-bottom:1rem;
+  font-size: 1.6rem;
+  /* Slightly larger font size for emphasis */
+  font-weight: bold;
+  /* Bold text for prominence */
+  color: #ffdd57;
+  /* A bright color to stand out */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent background for contrast */
+  padding: 0.5rem;
+  /* Padding for spacing around the text */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-top: -5px;
 }
 
@@ -313,12 +351,18 @@ body {
 }
 
 .section-7 .section-7.big-image {
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area */
-  display: block; /* Ensure it behaves as a block element */
-  max-width: 100%; /* Ensure it doesn't exceed parent width */
-  margin: 0; /* No margin needed for centering */
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Cover the area */
+  display: block;
+  /* Ensure it behaves as a block element */
+  max-width: 100%;
+  /* Ensure it doesn't exceed parent width */
+  margin: 0;
+  /* No margin needed for centering */
 }
 
 .section-7 .section-7-image-overlay {
@@ -331,7 +375,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .section-7 .image-text {
@@ -362,8 +406,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.section-7 .cta-button:hover, .section-7 .cta-button:focus {
-  background-color: #ff4500; /* A fiery color */
+.section-7 .cta-button:hover,
+.section-7 .cta-button:focus {
+  background-color: #ff4500;
+  /* A fiery color */
   color: #fff;
 }
 
@@ -421,8 +467,10 @@ body {
 }
 
 .fire-dragon-background {
-  position: relative; /* Position for absolute positioning of pseudo-elements */
-  overflow: hidden; /* Prevent overflow from pseudo-elements */
+  position: relative;
+  /* Position for absolute positioning of pseudo-elements */
+  overflow: hidden;
+  /* Prevent overflow from pseudo-elements */
 }
 
 /* Pseudo-element for the fire effect */
@@ -431,21 +479,32 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 200%; /* Double width for a wider glow */
-  height: 200%; /* Double height for a wider glow */
+  width: 200%;
+  /* Double width for a wider glow */
+  height: 200%;
+  /* Double height for a wider glow */
   background: radial-gradient(circle, rgba(255, 69, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
-  border-radius: 50%; /* Circular gradient */
-  transform: translate(-50%, -50%); /* Center the gradient */
-  opacity: 0.8; /* Slightly opaque for a subtle effect */
-  animation: flicker 18s infinite alternate; /* Animation for a flicker effect */
+  border-radius: 50%;
+  /* Circular gradient */
+  transform: translate(-50%, -50%);
+  /* Center the gradient */
+  opacity: 0.8;
+  /* Slightly opaque for a subtle effect */
+  animation: flicker 18s infinite alternate;
+  /* Animation for a flicker effect */
 }
 
 @keyframes flicker {
-  0%, 100% {
-      opacity: 0.6; /* Fade in and out */
+
+  0%,
+  100% {
+    opacity: 0.6;
+    /* Fade in and out */
   }
+
   50% {
-      opacity: 0.9; /* Brightest at the middle of the animation */
+    opacity: 0.9;
+    /* Brightest at the middle of the animation */
   }
 }
 
@@ -474,7 +533,8 @@ body {
 /* Sebbes kod CSS section 7 */
 
 /* WCAG-kontrast och fontstorlek för rubriker och text */
-.drakjörgen h2, .drakjörgen h3 {
+.drakjörgen h2,
+.drakjörgen h3 {
   color: #ffdd00;
 }
 
@@ -493,10 +553,12 @@ body {
 .section2 {
   background-color: var(--color-medium);
   border-radius: 10px;
-  padding: 2rem; /* Ökat padding */
+  padding: 2rem;
+  /* Ökat padding */
   text-align: center;
   width: 100%;
-  max-width: 450px; /* Minska sektionens maxbredd */
+  max-width: 450px;
+  /* Minska sektionens maxbredd */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   margin: 1rem auto;
@@ -504,8 +566,8 @@ body {
 
 .section2:hover {
   transform: scale(1.05);
-  opacity: 0.9; 
-  z-index: 10; 
+  opacity: 0.9;
+  z-index: 10;
 }
 
 .section2 img {
@@ -515,16 +577,18 @@ body {
 }
 
 .section2 img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .section2 h3 {
   margin-top: 1rem;
-  font-size: 1.8rem; /* Ökad fontstorlek för rubrik */
+  font-size: 1.8rem;
+  /* Ökad fontstorlek för rubrik */
 }
 
 .section2 p {
-  font-size: 1.2rem; /* Ökad fontstorlek för text */
+  font-size: 1.2rem;
+  /* Ökad fontstorlek för text */
   color: var(--color-light);
 }
 
@@ -539,9 +603,9 @@ body {
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
-  max-width: 600px; 
+  max-width: 600px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.5s ease-in; 
+  animation: fadeIn 0.5s ease-in;
 }
 
 .question {
@@ -554,7 +618,7 @@ body {
 }
 
 label {
-  display: block; 
+  display: block;
   padding: 0.5rem;
   border: 1px solid var(--color-dark);
   border-radius: 5px;
@@ -585,7 +649,7 @@ input[type="radio"] {
 
 #submit-quiz:hover {
   background-color: #e63900;
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
 }
 
 #quiz-result {
@@ -599,30 +663,37 @@ input[type="radio"] {
 /* Responsiv design */
 @media (min-width: 768px) {
   .quiz {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
   .section2 {
-      max-width: 600px; /* Justera maxbredden på större skärmar */
-      padding: 2.5rem; /* Öka padding */
+    max-width: 600px;
+    /* Justera maxbredden på större skärmar */
+    padding: 2.5rem;
+    /* Öka padding */
   }
 }
 
 @media (min-width: 1024px) {
   .section2 {
-      max-width: 700px; /* Justera maxbredden */
-      padding: 3rem; /* Öka padding */
+    max-width: 700px;
+    /* Justera maxbredden */
+    padding: 3rem;
+    /* Öka padding */
   }
 }
 
 @media (min-width: 1200px) {
   .section2 {
-      max-width: 800px; /* Justera maxbredden */
-      padding: 3.5rem; /* Öka padding */
+    max-width: 800px;
+    /* Justera maxbredden */
+    padding: 3.5rem;
+    /* Öka padding */
   }
 }
+
 /*Start Tobias CSS section-3*/
 .section-3 {
   display: grid;
@@ -684,8 +755,10 @@ input[type="radio"] {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 0 20px;
-  max-width: 1200px; /* Added max-width to the image container */
-  margin: 0 auto; /* Center the image container */
+  max-width: 1200px;
+  /* Added max-width to the image container */
+  margin: 0 auto;
+  /* Center the image container */
 }
 
 .image-container-section-3 figure {
@@ -699,7 +772,8 @@ input[type="radio"] {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  max-width: 600px; /* Ensures images don't grow too large */
+  max-width: 600px;
+  /* Ensures images don't grow too large */
 }
 
 .figcaption-section-3 {
@@ -714,19 +788,22 @@ input[type="radio"] {
   .banner-section-3 h2 {
     font-size: 3rem;
   }
+
   .description-deathwing {
     font-size: 1rem;
     padding: 0 10px;
   }
+
   .image-container-section-3 {
     grid-template-columns: 1fr;
     padding: 0 10px;
   }
 }
+
 /*End Tobias CSS section-3*/
 /*Section 4*/
-.section4{
-  max-height:min-content;
+.section4 {
+  max-height: min-content;
   background-color: var(--color-dark-light);
   background-image: url("imagesSection4/sssurf.svg");
   background-size: cover;
@@ -737,9 +814,9 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:400px;
+  height: 400px;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .gallery-item-sec4 {
@@ -751,11 +828,11 @@ input[type="radio"] {
   left: 0;
   text-align: center;
   opacity: 0;
-  transition:opacity 0.5s ease;
-  -webkit-transition:opacity 0.5s ease;
-  -moz-transition:opacity 0.5s ease;
-  -ms-transition:opacity 0.5s ease;
-  -o-transition:opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
 }
 
 .gallery-item-sec4.active {
@@ -769,12 +846,14 @@ input[type="radio"] {
   border-radius: 5px;
 
 }
-.text-sec4{
+
+.text-sec4 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .gallery-item-sec4 h3 {
   font-size: 18px;
 }
@@ -789,11 +868,11 @@ input[type="radio"] {
 .gallery-controls-sec4 {
   display: flex;
   justify-content: center;
-  gap:10px;
-  
+  gap: 10px;
+
 }
 
-.btn-layered-3d > ::before {
+.btn-layered-3d> ::before {
   box-sizing: border-box;
 }
 
@@ -814,8 +893,8 @@ input[type="radio"] {
   border-radius: 0.75em;
   transform-style: preserve-3d;
   transition: transform 0.15s ease-out, background 0.15s ease-out;
-} 
- 
+}
+
 .btn-layered-3d::before {
   position: absolute;
   content: "";
@@ -825,56 +904,72 @@ input[type="radio"] {
   border-radius: inherit;
   transform: translate3d(0px, 0.75em, -1em);
   transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
-} 
- 
+}
+
 .btn-layered-3d:hover {
   transform: translateY(0.25em);
-} 
- 
+}
+
 .btn-layered-3d:hover::before {
   transform: translate3d(0px, 0.5em, -1em);
-} 
- 
+}
+
 .btn-layered-3d--blue {
   color: var(--color-lightest);
   background: var(--color-dark);
   border: 2px solid var(--color-lightest);
-} 
- 
+}
+
 .btn-layered-3d--blue::before {
   background: var(--color-dark);
   box-shadow: var(--color-lightest) 0px 0px 0px 2px, rgb(214, 230, 255) 0px 0.2em 0px 0px;
-} 
+}
 
 .section-5 {
-  display: flex; /* Use flex display */
-  flex-wrap: wrap; /* Allow items to wrap */
+  display: flex;
+  /* Use flex display */
+  flex-wrap: wrap;
+  /* Allow items to wrap */
   justify-content: center;
   align-items: center;
-  gap: 30px; /* Gap between items */
-  padding: 100px 0; /* Adjust padding for the section if needed */
-  background: linear-gradient(to right, var(--color-dark), var(--color-dark-light)); /* Light background for the section */
+  gap: 30px;
+  /* Gap between items */
+  padding: 100px 0;
+  /* Adjust padding for the section if needed */
+  background: linear-gradient(to right, var(--color-dark), var(--color-dark-light));
+  /* Light background for the section */
   position: relative;
   background-color: red;
 }
 
 .section-5 .card {
-  background: var(--color-medium); /* Updated card background color for better contrast */
-  border-radius: 20px; /* Updated border radius */
+  background: var(--color-medium);
+  /* Updated card background color for better contrast */
+  border-radius: 20px;
+  /* Updated border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: min(400px, 100%); /* Max width set to 400px */
-  height: 700px; /* Fixed height */
-  padding: 10px; /* Added padding */
+  width: min(400px, 100%);
+  /* Max width set to 400px */
+  height: 700px;
+  /* Fixed height */
+  padding: 10px;
+  /* Added padding */
   text-align: center;
-  display: flex; /* Added flex display */
-  flex-direction: column; /* Set direction to column */
-  justify-content: space-between; /* Even spacing between elements */
-  align-items: center; /* Center all items in the card */
-  color: var(--color-lightest); /* All text set to lightest color */
+  display: flex;
+  /* Added flex display */
+  flex-direction: column;
+  /* Set direction to column */
+  justify-content: space-between;
+  /* Even spacing between elements */
+  align-items: center;
+  /* Center all items in the card */
+  color: var(--color-lightest);
+  /* All text set to lightest color */
+  position: relative;
 }
 
-  footer {
+footer {
   background-color: #1a1a1a;
   color: #f5f5f5;
   padding: 20px;
@@ -889,9 +984,12 @@ input[type="radio"] {
 }
 
 .section-5 .card-back {
-  width: min(400px, 100%); /* Max width set to 400px */
-  height: 700px; /* Fixed height */
-  display: none; /* Initially hidden */
+  width: min(400px, 100%);
+  /* Max width set to 400px */
+  height: 700px;
+  /* Fixed height */
+  display: none;
+  /* Initially hidden */
   padding: 10px;
   position: absolute;
   top: 0;
@@ -900,25 +998,36 @@ input[type="radio"] {
 }
 
 .section-5 .card img {
-  width: 100%; /* Set width to 100% */
-  height: 400px; /* Updated height to 400px */
-  object-fit: cover; /* Ensures the image covers the area */
-  border-radius: 10px; /* Added border radius to the image */
+  width: 100%;
+  /* Set width to 100% */
+  height: 400px;
+  /* Updated height to 400px */
+  object-fit: cover;
+  /* Ensures the image covers the area */
+  border-radius: 10px;
+  /* Added border radius to the image */
 }
 
 .section-5 .card figcaption {
-  font-size: 2rem; /* Increased font size */
-  font-weight: bold; /* Made font bold */
-  margin: 10px 0; /* Optional margin for spacing */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Added text shadow */
+  font-size: 2rem;
+  /* Increased font size */
+  font-weight: bold;
+  /* Made font bold */
+  margin: 10px 0;
+  /* Optional margin for spacing */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  /* Added text shadow */
 }
 
 .section-5 .card p {
-  position: relative; /* Set position to relative for pseudo-elements */
+  position: relative;
+  /* Set position to relative for pseudo-elements */
   padding: 0 16px;
   margin-bottom: 80px;
-  max-width: 80%; /* Set max width to 80% */
-  text-align: center; /* Center text within the paragraph */
+  max-width: 80%;
+  /* Set max width to 80% */
+  text-align: center;
+  /* Center text within the paragraph */
 }
 
 .section-5 .card-back p {
@@ -930,44 +1039,61 @@ input[type="radio"] {
 /* Pseudo-elements for horizontal lines */
 .section-5 .card .card-front-p::before,
 .section-5 .card .card-front-p::after {
-  content: ""; /* Necessary for pseudo-elements */
-  position: absolute; /* Positioning */
-  left: 0; /* Align to the left */
-  width: 100%; /* Full width */
-  height: 2px; /* Height of the line */
-  background-color: var(--color-light); /* Light grey from the palette */
+  content: "";
+  /* Necessary for pseudo-elements */
+  position: absolute;
+  /* Positioning */
+  left: 0;
+  /* Align to the left */
+  width: 100%;
+  /* Full width */
+  height: 2px;
+  /* Height of the line */
+  background-color: var(--color-light);
+  /* Light grey from the palette */
 }
 
 .section-5 .card .card-front-p::before {
-  top: -10px; /* Position above the paragraph */
+  top: -10px;
+  /* Position above the paragraph */
 }
 
 .section-5 .card p::after {
-  bottom: -10px; /* Position below the paragraph */
+  bottom: -10px;
+  /* Position below the paragraph */
 }
 
 /* Button Styles */
 .section-5 .card button {
-  background-color: var(--color-dark-light); /* Button background color */
+  background-color: var(--color-dark-light);
+  /* Button background color */
   border: none;
-  color: var(--color-lightest); /* Button text color */
+  color: var(--color-lightest);
+  /* Button text color */
   padding: 10px 20px;
-  border-radius: 10px; /* Updated border radius for the button */
+  border-radius: 10px;
+  /* Updated border radius for the button */
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
-  position: relative; /* Position for 3D effect */
-  perspective: 1000px; /* Perspective for 3D effect */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition for background and transform */
+  position: relative;
+  /* Position for 3D effect */
+  perspective: 1000px;
+  /* Perspective for 3D effect */
 }
 
 .section-5 .card button:hover {
-  background-color: var(--color-medium-light); /* Darker button color on hover */
-  transform: rotateY(180deg); /* Flip on hover */
+  background-color: var(--color-medium-light);
+  /* Darker button color on hover */
+  transform: rotateY(180deg);
+  /* Flip on hover */
 }
 
 /* Optional: Adding a wrapper for the button to handle the flip effect */
 .card-button-wrapper {
   width: fit-content;
-  perspective: 1000px; /* Perspective for 3D effect */
+  perspective: 1000px;
+  /* Perspective for 3D effect */
   margin-top: auto;
   position: absolute;
   left: 50%;
@@ -978,22 +1104,27 @@ input[type="radio"] {
 .card-button {
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide back face when flipped */
-  transition: transform 0.6s; /* Smooth transition for flipping */
+  backface-visibility: hidden;
+  /* Hide back face when flipped */
+  transition: transform 0.6s;
+  /* Smooth transition for flipping */
 }
 
 .card-button:hover {
-  transform: rotateY(180deg); /* Flip effect */
+  transform: rotateY(180deg);
+  /* Flip effect */
 }
 
 .nav-section6 {
   background: #2c3e50;
   text-align: center;
   padding: 15px 0;
-  position: sticky; /* Sticky navigation bar */
+  position: sticky;
+  /* Sticky navigation bar */
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for nav */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  /* Shadow for nav */
 }
 
 .nav-section6 ul {
@@ -1007,8 +1138,10 @@ input[type="radio"] {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #000000, #2c3e50); /* Smooth gradient background */
-  color: #ffffff; /* Set text color to white for contrast */
+  background: linear-gradient(135deg, #000000, #2c3e50);
+  /* Smooth gradient background */
+  color: #ffffff;
+  /* Set text color to white for contrast */
 }
 
 .nav-section6 ul li {
@@ -1022,13 +1155,17 @@ input[type="radio"] {
   font-size: 1.2em;
   letter-spacing: 2px;
   padding: 10px 15px;
-  transition: color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  /* Smooth hover effects */
 }
 
 .nav-section6 a:hover {
-  color: #ffcc00; /* Change color on hover */
-  transform: scale(1.2); /* Slightly increase size on hover */
-  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing hover effect */
+  color: #ffcc00;
+  /* Change color on hover */
+  transform: scale(1.2);
+  /* Slightly increase size on hover */
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  /* Glowing hover effect */
 }
 
 
@@ -1037,25 +1174,35 @@ input[type="radio"] {
   color: #ffffff;
   text-align: center;
   font-size: 2.5em;
-  text-transform: uppercase; /* Make text uppercase */
-  letter-spacing: 5px; /* Increase letter spacing */
+  text-transform: uppercase;
+  /* Make text uppercase */
+  letter-spacing: 5px;
+  /* Increase letter spacing */
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(90deg, #ffcc00, #ff4500); /* Gradient text effect */
+  background: linear-gradient(90deg, #ffcc00, #ff4500);
+  /* Gradient text effect */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
-  animation: glowingText 2s infinite alternate; /* Glowing animation */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  -webkit-text-fill-color: transparent;
+  /* Makes the gradient visible */
+  animation: glowingText 2s infinite alternate;
+  /* Glowing animation */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* Soft shadow */
   padding: 10px;
-  transition: transform 0.5s ease, letter-spacing 0.3s ease; /* Smooth transition */
+  transition: transform 0.5s ease, letter-spacing 0.3s ease;
+  /* Smooth transition */
 }
 
 .dragon-heading:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  letter-spacing: 7px; /* Increase spacing on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge on hover */
+  letter-spacing: 7px;
+  /* Increase spacing on hover */
   color: #ffcc00;
-  text-shadow: 0 0 15px #ffcc00, 0 0 20px #ff4500; /* Glowing shadow on hover */
+  text-shadow: 0 0 15px #ffcc00, 0 0 20px #ff4500;
+  /* Glowing shadow on hover */
 }
 
 /* Glowing text animation */
@@ -1063,6 +1210,7 @@ input[type="radio"] {
   0% {
     text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff4500;
   }
+
   100% {
     text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
   }
@@ -1071,31 +1219,44 @@ input[type="radio"] {
 
 .main-content-sec2 {
   padding: 40px;
-  background-color: #1a1a1a; /* Add a background color for distinction */
-  animation: fadeIn 2s ease; /* Smooth fade-in effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Add some shadow for depth */
-  border-radius: 10px; /* Rounded corners */
-  transition: all 0.3s ease; /* Add transition for smooth effects */
+  background-color: #1a1a1a;
+  /* Add a background color for distinction */
+  animation: fadeIn 2s ease;
+  /* Smooth fade-in effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Add some shadow for depth */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: all 0.3s ease;
+  /* Add transition for smooth effects */
 }
 
 
 .main-content-sec2:hover {
-  transform: scale(1.02); /* Slight enlargement on hover */
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Stronger shadow on hover */
+  transform: scale(1.02);
+  /* Slight enlargement on hover */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  /* Stronger shadow on hover */
 }
 
-.about-sec6-sec, .favorite-dragons-sec {
+.about-sec6-sec,
+.favorite-dragons-sec {
   margin: 30px 0;
   padding: 30px;
-  background: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
+  background: rgba(26, 26, 26, 0.8);
+  /* Semi-transparent dark background */
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Soft shadow */
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  /* Soft shadow */
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.about-sec6-sec:hover, .favorite-dragons-sec:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); /* Stronger shadow */
+.about-sec6-sec:hover,
+.favorite-dragons-sec:hover {
+  transform: translateY(-5px);
+  /* Slight lift on hover */
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+  /* Stronger shadow */
 }
 
 .three-column-layout-sec6 {
@@ -1109,41 +1270,56 @@ input[type="radio"] {
   max-width: 100%;
   height: auto;
   margin: 10px;
-  border-radius: 12px; /* Round image corners */
-  transition: transform 0.6s ease, filter 0.6s ease; /* Smooth scale and filter */
+  border-radius: 12px;
+  /* Round image corners */
+  transition: transform 0.6s ease, filter 0.6s ease;
+  /* Smooth scale and filter */
 }
 
 .side-image:hover {
-  transform: scale(1.1); /* Slightly enlarge image on hover */
-  filter: brightness(1.2); /* Increase brightness on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge image on hover */
+  filter: brightness(1.2);
+  /* Increase brightness on hover */
 }
 
 .large-image {
-  flex: 1 1 50%; /* Adjusts the image to occupy 50% of the container */
+  flex: 1 1 50%;
+  /* Adjusts the image to occupy 50% of the container */
 }
 
 .text-content-sec6 {
-  flex: 1 1 50%; /* Adjusts the text to occupy 50% of the container */
+  flex: 1 1 50%;
+  /* Adjusts the text to occupy 50% of the container */
 }
 
- /* Franks kod börjar här */
+/* Franks kod börjar här */
 .name-generator {
   text-align: center;
-  margin-bottom: 20px; /* Avstånd under namngeneratorn */
+  margin-bottom: 20px;
+  /* Avstånd under namngeneratorn */
 }
 
 #generateNameButton {
-  padding: 10px 20px; /* Padding för knappen */
-  font-size: 1.2em; /* Större text */
-  background-color: var(--color-medium); /* Bakgrundsfärg */
-  color: var(--color-lightest); /* Textfärg */
-  border: none; /* Ingen kantlinje */
-  border-radius: 5px; /* Rundade hörn */
-  cursor: pointer; /* Handpekare vid hover */
+  padding: 10px 20px;
+  /* Padding för knappen */
+  font-size: 1.2em;
+  /* Större text */
+  background-color: var(--color-medium);
+  /* Bakgrundsfärg */
+  color: var(--color-lightest);
+  /* Textfärg */
+  border: none;
+  /* Ingen kantlinje */
+  border-radius: 5px;
+  /* Rundade hörn */
+  cursor: pointer;
+  /* Handpekare vid hover */
 }
 
 #generateNameButton:hover {
-  background-color: var(--color-light); /* Ljusare färg vid hover */
+  background-color: var(--color-light);
+  /* Ljusare färg vid hover */
 }
 
 
@@ -1155,15 +1331,18 @@ input[type="radio"] {
 .dragon-name-generator button {
   padding: 10px 15px;
   font-size: 1.2em;
-  background-color: var(--color-medium-light); /* Medium-light background */
-  color: var(--color-lightest); /* Light text color */
+  background-color: var(--color-medium-light);
+  /* Medium-light background */
+  color: var(--color-lightest);
+  /* Light text color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .dragon-name-generator button:hover {
-  background-color: var(--color-light); /* Lighter background on hover */
+  background-color: var(--color-light);
+  /* Lighter background on hover */
 }
 
 .dragon-gallery-large {
@@ -1178,9 +1357,10 @@ input[type="radio"] {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dragon-figure-large h2, 
+.dragon-figure-large h2,
 .dragon-figure-large p {
-  color: var(--color-lightest); /* Light text color for figcaption */
+  color: var(--color-lightest);
+  /* Light text color for figcaption */
   text-align: center;
   margin-top: 10px;
   padding: 10px;
@@ -1200,9 +1380,10 @@ input[type="radio"] {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dragon-figure-small h2, 
+.dragon-figure-small h2,
 .dragon-figure-small p {
-  color: var(--color-lightest); /* Light text color for figcaption */
+  color: var(--color-lightest);
+  /* Light text color for figcaption */
   text-align: center;
   margin-top: 10px;
   padding: 10px;
@@ -1214,18 +1395,22 @@ input[type="radio"] {
   height: 200px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for scaling */
 }
 
 .dragon-figure-large:hover img,
 .dragon-figure-small:hover img {
-  transform: scale(1.05); /* Slightly zoom in */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+  transform: scale(1.05);
+  /* Slightly zoom in */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  /* Add shadow */
 }
 
 .dragon-figure-large:hover figcaption,
 .dragon-figure-small:hover figcaption {
-  transform: translateY(-10px); /* Move the text up */
+  transform: translateY(-10px);
+  /* Move the text up */
 }
 
 /* Responsive styles */
@@ -1244,15 +1429,15 @@ input[type="radio"] {
     gap: 20px;
   }
 
-  .dragon-small-wrapper > figure:first-child {
+  .dragon-small-wrapper>figure:first-child {
     grid-column: 2;
   }
 
-  .dragon-small-wrapper > figure:nth-child(2) {
+  .dragon-small-wrapper>figure:nth-child(2) {
     grid-column: 3;
   }
 
-  .dragon-small-wrapper > figure:last-child {
+  .dragon-small-wrapper>figure:last-child {
     grid-column: 4;
   }
 }
@@ -1273,6 +1458,7 @@ input[type="radio"] {
     grid-template-columns: 1fr;
   }
 }
+
 /* Slut franks css */
 /*Start Tobias CSS Footer*/
 footer p {
@@ -1299,4 +1485,5 @@ footer p {
   height: 150px;
   z-index: 1;
 }
+
 /*End Tobias CSS Footer*/
