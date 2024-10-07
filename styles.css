@@ -165,7 +165,6 @@ body {
   .header__menu-toggle {
     display: block;
   }
-
 }
 
 /* Sebbes kod CSS section 7 */
@@ -178,13 +177,12 @@ body {
 .section-7 .auroraBackground {
   padding: 40px;
   padding-bottom: 60px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%),
-    url('img/section7aurora.jpg');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("img/section7aurora.jpg");
   /* Replace with your aurora image URL */
   background-size: cover;
   color: #f4f4f4;
   /* Adjust text color for contrast */
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   /* Change to your preferred font */
 }
 
@@ -212,7 +210,7 @@ body {
 
 /* Pseudo-element for the aurora effect */
 .aurora-text-background::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -248,7 +246,6 @@ body {
     /* Return to original size */
   }
 }
-
 
 .section-7 .gallery-container {
   display: grid;
@@ -375,7 +372,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .section-7 .image-text {
@@ -475,7 +471,7 @@ body {
 
 /* Pseudo-element for the fire effect */
 .fire-dragon-background::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -495,7 +491,6 @@ body {
 }
 
 @keyframes flicker {
-
   0%,
   100% {
     opacity: 0.6;
@@ -529,7 +524,6 @@ body {
   }
 }
 
-
 /* Sebbes kod CSS section 7 */
 
 /* WCAG-kontrast och fontstorlek för rubriker och text */
@@ -556,7 +550,6 @@ body {
   padding: 2rem;
   /* Ökat padding */
   text-align: center;
-  width: 100%;
   max-width: 450px;
   /* Minska sektionens maxbredd */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -739,7 +732,6 @@ input[type="radio"] {
   z-index: 1;
 }
 
-
 .description-deathwing {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -837,14 +829,12 @@ input[type="radio"] {
 
 .gallery-item-sec4.active {
   opacity: 1;
-
 }
 
 .gallery-item-sec4 img {
   max-width: 300px;
   height: 300px;
   border-radius: 5px;
-
 }
 
 .text-sec4 {
@@ -862,17 +852,15 @@ input[type="radio"] {
   margin-top: 5px;
   font-size: 14px;
   max-width: 350px;
-
 }
 
 .gallery-controls-sec4 {
   display: flex;
   justify-content: center;
   gap: 10px;
-
 }
 
-.btn-layered-3d> ::before {
+.btn-layered-3d > ::before {
   box-sizing: border-box;
 }
 
@@ -967,6 +955,7 @@ input[type="radio"] {
   color: var(--color-lightest);
   /* All text set to lightest color */
   position: relative;
+  z-index: 2;
 }
 
 footer {
@@ -1134,7 +1123,7 @@ footer {
 }
 
 .custom-body-sec6 {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -1168,13 +1157,13 @@ footer {
   /* Glowing hover effect */
 }
 
-
 /* Class for all dragon headings */
 .dragon-heading {
   color: #ffffff;
   text-align: center;
   font-size: 2.5em;
   text-transform: uppercase;
+  word-break: break-word;
   /* Make text uppercase */
   letter-spacing: 5px;
   /* Increase letter spacing */
@@ -1216,7 +1205,6 @@ footer {
   }
 }
 
-
 .main-content-sec2 {
   padding: 40px;
   background-color: #1a1a1a;
@@ -1230,7 +1218,6 @@ footer {
   transition: all 0.3s ease;
   /* Add transition for smooth effects */
 }
-
 
 .main-content-sec2:hover {
   transform: scale(1.02);
@@ -1321,7 +1308,6 @@ footer {
   background-color: var(--color-light);
   /* Ljusare färg vid hover */
 }
-
 
 .dragon-name-generator {
   text-align: center;
@@ -1429,15 +1415,15 @@ footer {
     gap: 20px;
   }
 
-  .dragon-small-wrapper>figure:first-child {
+  .dragon-small-wrapper > figure:first-child {
     grid-column: 2;
   }
 
-  .dragon-small-wrapper>figure:nth-child(2) {
+  .dragon-small-wrapper > figure:nth-child(2) {
     grid-column: 3;
   }
 
-  .dragon-small-wrapper>figure:last-child {
+  .dragon-small-wrapper > figure:last-child {
     grid-column: 4;
   }
 }
